@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { SingletodoProps } from "./types";
-import { AiFillEdit, AiFillDelete } from "react-icons/ai";
+import { MdEdit, MdDelete } from "react-icons/md";
 import { MdDone } from "react-icons/md";
 import "./styles.css";
 
@@ -52,10 +52,10 @@ const SingleTodo: React.FC<SingletodoProps> = ({ todo, todos, setTodos }) => {
             }
           }}
         >
-          <AiFillEdit />
+          <MdEdit />
         </span>
         <span className="icon" onClick={() => handleDelete(todo.id)}>
-          <AiFillDelete />
+          <MdDelete />
         </span>
         <span className="icon" onClick={() => handleDone(todo.id)}>
           <MdDone />
