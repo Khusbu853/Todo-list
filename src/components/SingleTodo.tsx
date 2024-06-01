@@ -1,7 +1,6 @@
 import React from "react";
 import { SingletodoProps } from "./types";
-import { MdEdit, MdDelete } from "react-icons/md";
-import { MdDone } from "react-icons/md";
+import { MdEdit, MdDelete, MdDone } from "react-icons/md";
 import "./styles.css";
 
 const SingleTodo: React.FC<SingletodoProps> = ({ todo, todos, setTodos }) => {
